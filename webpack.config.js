@@ -31,7 +31,7 @@ module.exports = {
     devtool: 'source-map',
     entry: [
         'webpack-hot-middleware/client',
-        './client/reduxstagram'
+        './client/index'
     ],
     output: {
         path: DIST_DIR,
@@ -40,7 +40,7 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoErrorsPlugin()
+        new webpack.NoEmitOnErrorsPlugin()
     ],
     module: {
         loaders

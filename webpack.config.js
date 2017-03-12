@@ -25,13 +25,15 @@ const aliases = {
   components: path.resolve(CLIENT_DIR, 'components'),
   reducers: path.resolve(CLIENT_DIR, 'reducers'),
   actions: path.resolve(CLIENT_DIR, 'actions'),
+  styles: path.resolve(CLIENT_DIR, 'styles'),
 };
 
 module.exports = {
+    context: CLIENT_DIR,
     devtool: 'source-map',
     entry: [
         'webpack-hot-middleware/client',
-        './client/index'
+        './index'
     ],
     output: {
         path: DIST_DIR,

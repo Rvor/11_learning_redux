@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Photo from './Photo';
 
-class PhotoGrid extends Component {
+const PhotoGrid = React.createClass ({
     render(){
         return (
             <div className="photo-grid">
@@ -9,6 +9,6 @@ class PhotoGrid extends Component {
             </div>
         );
     }
-}
+});
 
 export default PhotoGrid;
